@@ -1,0 +1,76 @@
+/* Created XX April XXXX
+Last update April XX:  */
+
+:root {
+  --zI-1: 1;
+  --zI-2: 2;
+  --zI-3: 3;
+  --zI-4: 4;
+  --zI-5: 5;
+
+  /* --z-nav: var(--zI-2); 100 */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*--- General ---*/
+
+html {
+  font-size: 62.5%;
+  background-color: rgba(177, 177, 177, 0.162);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+  font-size: 1.6rem;
+}
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1600px;
+}
+
+.container img {
+  object-fit: cover;
+  margin: 1rem;
+  height: 200px;
+  width: 200px;
+  border-radius: 3px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 490px) {
+  .container img {
+    width: 140px;
+    height: 180px;
+  }
+}
